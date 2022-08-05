@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 54px;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 953px;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+
+.logo ion-icon {
+  font-size: 22px;
+}
+
+.logo .border {
+  width: 1px;
+  height: 22px;
+  background-color: #dbdbdb;
+}
+
+.search input {
+  width: 215px;
+  height: 28px;
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.nav {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav ion-icon {
+  font-size: 22px;
+}
+
+.content {
+  position: relative;
+  width: 953px;
+  height: 1250px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 88px;
+}
+
+.stories {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: 614px;
+  height: 118px;
+
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.stories div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  width: 60px;
+  margin: 0 10px;
+}
+
+.stories .arrow-overflow {
+  position: absolute;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.border-img {
+  position: absolute;
+  z-index: 0;
+  width: 62px;
+}
+
+.img-stories {
+  position: absolute;
+  z-index: 1;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.stories div p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.posts {
+  width: 614px;
+  height: 1250px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  margin-top: 60px;
+}
+
+.post:nth-child(1) {
+  margin-top: 24px;
+}
+
+.post .top {
+  height: 60px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.info-person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
+}
+
+.info-person .person {
+  width: 32px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.info-person p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.post img {
+  width: 612px;
+}
+
+.post .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.bottom .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bottom .buttons ion-icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.buttons .box-button {
+  margin-left: 15px;
+}
+
+.likes,
+.comments {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.likes img,
+.comments img {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+}
+
+.comments {
+  justify-content: space-between;
+}
+
+.comments .like {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.publish-comment {
+  display: flex;
+  margin-top: 10px;
+  height: 40px;
+  border-top: 1px solid #dbdbdb;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.publish-comment div {
+  display: flex;
+  width: 250px;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.publish-comment div input,
+.publish-comment div input:active {
+  width: 200px;
+  color: #8e8e8e;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.publish-comment div ion-icon {
+  color: #8e8e8e;
+  font-size: 24px;
+}
+
+.publish-comment button {
+  margin-right: 15px;
+  font-size: 16px;
+  color: #b2dffc;
+  background-color: inherit;
+  border: none;
+}
+
+.publish-comment button:hover {
+  color: #0095f6;
+  transition: 300ms ease;
+}
+
+.sidebar {
+  position: sticky;
+  top: 88px;
+  right: 0px;
+  width: 293px;
+  height: 400px;
+  padding-left: 15px;
+  margin-right: 15px;
+}
+
+.sidebar .person {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 118px;
+}
+
+.sidebar .person img {
+  width: 56px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sidebar .person .person-text-info {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .person .person-text-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .person .person-text-info div p:nth-child(1) {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.sidebar .person .person-text-info div p:nth-child(2) {
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.sidebar .person .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar .person .header p:nth-child(1) {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.sidebar .person .header p:nth-child(2) {
+  color: #262626;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.sidebar .sugestions p:nth-child(1) {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.sugestion .sugestion-person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.sugestion .sugestion-person .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 110px;
+}
+
+.sugestion .sugestion-person .info img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sugestions .sugestion-person .info-text p:nth-child(1) {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.sugestions .sugestion-person .info-text p:nth-child(2) {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.sugestions .sugestion-person .follow {
+  color: #139ef2;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.sugestions .about,
+.sugestions .copyright {
+  color: #c7c7c7;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  margin-top: 15px;
+}
+
+.mobile,
+.mobile-bottom {
+  display: none;
+}
+
+@media (max-width: 935px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .menu {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 614px) {
+  .menu {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .feed,
+  .stories,
+  .posts,
+  .post img {
+    width: 100%;
+  }
+
+  .post .bottom img {
+    width: 20px;
+  }
+
+  .stories {
+    background-color: #fafafa;
+    border: none;
+    height: 80px;
+  }
+
+  .stories .arrow-overflow {
+    display: none;
+  }
+
+  .mobile-bottom {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #ffffff;
+    border-top: 1px solid #dbdbdb;
+
+    width: 100%;
+    height: 54px;
+    padding: 0;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .menu ion-icon {
+    font-size: 22px;
+  }
+
+  .mobile-bottom ion-icon {
+    font-size: 22px;
+  }
+}
